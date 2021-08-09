@@ -2,7 +2,7 @@ angular.module("pvtApp").directive('timerDisplay', function ($timeout, trialTime
     return {
         scope: { },
         restrict: 'E',
-        template: "<div ng-if='showTimer'>{{ value }}</div>",
+        template: "<div ng-if='showTimer'><div class='time'>{{ value }}</div><div class='dot'/></div>",
         link: function (scope, element, attrs) {
             var timeoutPromise;
 

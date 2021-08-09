@@ -322,3 +322,33 @@ p a:visited { color: black; }
         page-break-after: avoid;
     }
 }
+
+.time {
+    display: none;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #F00;
+    background: #F00;
+    margin: auto;
+}
+
+.trial-timer {
+    width: 100%;
+}
+
+.trial-timer>video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.trial-timer .dot {
+    margin-top: 30%;
+}
